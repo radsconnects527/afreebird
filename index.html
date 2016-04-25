@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    
+      <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+       <link rel="stylesheet"  href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+       <link rel="stylesheet" type="text/css" href="styles/style.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700|Titillium:400,600,700' rel='stylesheet' type='text/css'>
+ <!--    <link rel="stylesheet" href="styles/ui-grid.css"> -->
+    <!-- endbuild -->
+  </head>
+  <body ng-app="freebirdApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+
+	<div ng-controller="MainCtrl">
+        
+        <nav class="navbar navbar-inverse" style="margin-bottom:0; background-color:#2574A9; border-color:#2574A9; min-height:20px ">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-4">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="" style="font-color:#fff" ng-click="navigate('')">HOME</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-4">
+          <ul class="nav navbar-nav">
+            <li><a href="" ng-click="navigate('about')">ABOUT</a></li>
+            <li><a href="">AFB IN THE NEWS</a></li>
+            <li><a href="">DOCTOR'S</a></li>
+            <li><a href="">DOCTOR'S CORNER</a></li>
+            <li><a href="">PROGRAMS</a></li>
+            <li><a href=""> GET INVOLVED </a></li>
+            <li><a href=""> DONATE </a></li>
+            <li><a href=""> OUR SPONSORS </a></li>
+            <li><a href=""> EVENTS </a></li>
+            <li><a href=""> AFB INSIDER </a></li>
+            
+          </ul>
+          <ul class="collapse nav navbar-nav nav-collapse slide-down" role="search" id="nav-collapse4">
+            <li><a href="#">Support</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="https://pbs.twimg.com/profile_images/588909533428322304/Gxuyp46N.jpg" alt="maridlcrmn" width="20" /> Maridlcrmn <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">My profile</a></li>
+                <li><a href="#">Favorited</a></li>
+                <li><a href="#">Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+        
+	    <div ng-view=""></div>
+	</div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    
+	<!-- <script src="scripts/app.min.js"></script> -->
+     <script src="scripts/app.js"></script>
+     <script src="scripts/controllers/mainController.js"></script>
+      <script src="scripts/controllers/home.js"></script>
+      <script src="scripts/controllers/about.js"></script>
+      <script src="scripts/controllers/ksk.js"></script>
+      <script src="scripts/controllers/dream.js"></script>
+      <script src="scripts/controllers/fightfree.js"></script>
+      <script src="scripts/controllers/inspiration.js"></script>
+
+     <!-- endbuild -->
+</body>
+</html>

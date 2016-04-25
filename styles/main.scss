@@ -1,0 +1,663 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+$primary-color: #57C244; // Green
+$primary-contrast: #3E464D; // Grey_Blue
+$text-color: black;
+$background-color: #ecf0f1; // Clouds from FlatUI Colors
+$light-white: #ecf0f1; // Clouds from FlatUI Colors
+$pomogranate-color: #c0392b;
+
+.btn-theme
+{
+    background-color: $primary-color;
+    border-color: darken($primary-color, 20%);
+    color: $light-white;
+}
+
+.navbar
+{
+    border-radius: 0px !important;
+}
+
+.navbar-default
+{
+    color: $background-color;
+    background-color: $primary-contrast;
+    border: 0px;
+    margin-bottom: 0px !important;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+html {
+    height: 100%;
+    font-family: 'Titillium', sans-serif;
+}
+
+.soft-bg {
+	background-color: $light-white;
+	color: $primary-contrast;
+}
+
+.hard-bg {
+	background-color: $primary-contrast;
+	color: $primary-color;
+}
+
+body {
+  padding: 0;
+  height: 100%;
+  min-height: 600px;
+  background-color: $background-color;
+  font-family: 'Titillium', sans-serif;
+  font-weight: 400;
+}
+
+h2,h3,h4,h5 {
+	font-weight:400;
+}
+
+.primary {
+	color: $primary-color;
+}
+
+.primary-contrast {
+	color: $primary-contrast;
+}
+
+.light {
+	color: $background-color;
+}
+
+.light-white {
+	color: $light-white;
+}
+
+.odd-container {
+  /*  background: -webkit-linear-gradient(lighten($background-color, 30), $background-color); 
+    background: -o-linear-gradient(lighten($background-color, 30), $background-color); 
+    background: -moz-linear-gradient(lighten($background-color, 30), $background-color); 
+    background: linear-gradient(lighten($background-color, 30), $background-color); */
+    background:	$primary-contrast;
+    color: $light-white;
+    height: 600px;
+}
+
+.even-container {
+ /*   background: -webkit-linear-gradient(lighten($primary-color, 20), $primary-color); 
+    background: -o-linear-gradient(lighten($primary-color, 20), $primary-color); 
+    background: -moz-linear-gradient(lighten($primary-color, 20), $primary-color); 
+    background: linear-gradient(lighten($primary-color, 20), $primary-color); */
+    background:	$background-color;
+    color:$primary-contrast;
+    height: 600px;
+}
+
+.signup-container {
+    background: -webkit-linear-gradient(lighten($background-color, 30), $background-color); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(lighten($background-color, 30), $background-color); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(lighten($background-color, 30), $background-color); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(lighten($background-color, 30), $background-color); /* Standard syntax */
+    height: 100%;
+    min-height: 500px;
+}
+
+.list-style {
+    font-size: 1.5em;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 0px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 0px;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+.header {
+    border-bottom: 0px !important;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: $primary-contrast;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer-inverse {
+  padding-top: 19px;
+  color: $light-white;
+  background-color: $primary-contrast;
+  border-top: 1px solid #e5e5e5;
+  margin-top:30px;
+}
+
+.footer h4 {
+  margin-top: 7px;
+  margin-bottom: 7px;
+ }
+ 
+ .footer-texts {
+  text-align: left;
+ }
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: rgba(0,0,0,0);
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+  //  margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.login-form {
+    height: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 0px;
+    color: black;
+    width: 250px;
+    border-top-left-radius: 3px;
+    /* border-bottom: 4px solid orange; */
+    border-top-right-radius: 3px;
+}
+
+.selected-tab {
+	color: $primary-color;
+}
+
+.form-container {
+	color: $light-white;
+	background-color: $primary-contrast;
+    border-radius: 5px;
+    padding:10px;
+}
+
+.myGrid {
+    width: 500px;
+    height: 250px;
+  }
+  
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.jqx-grid-column-header.jqx-widget-header {
+	background-color: $primary-contrast;
+	color: $light-white;
+	text-transform: uppercase;
+}
+
+.jqx-grid-cell {
+	background-color: $light-white;
+}
+
+button.jqx-button, input[type=button].jqx-button, input[type=submit].jqx-button {
+	background-color: $primary-color;
+	color: $light-white;
+}
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events:all;
+}
+
+/*
+.jqx-grid-content {
+    cursor: pointer;
+}*/
+
+// CSS for Rating
+.rating{
+  color: #a9a9a9;
+  margin: 0;
+  padding: 0;
+}
+
+ul.rating {
+  display: inline-block;
+}
+
+.rating li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 45px;
+}
+
+.rating .filled {
+  color: $primary-color;
+}
+
+.blinktext {
+  animation: blinker 1s linear infinite; 
+}
+
+@keyframes blinker {  
+  50% { opacity: 0.0; }
+}
+
+#desktopThreads, #mobileThreads {
+	margin:20px;
+}
+
+#desktopThreads {
+	display: block;
+}
+	
+#mobileThreads {
+	display: none;
+}
+
+#becomeCouchCoach {
+	height: 670px;
+}
+
+.modal-header {
+	color:$light-white;
+	background-color:$primary-contrast;
+}
+
+.close {
+	opacity:1;
+}
+
+.hand-onover {
+	cursor:pointer;
+}
+
+.strong-bg {
+	color:$light-white;
+	background-color:$primary-contrast;
+}
+
+.row-name-formatter {
+	cursor:pointer;
+	text-decoration:underline;
+	margin-top:4px;
+	margin-left:4px;
+}
+
+
+.details-header {
+	padding-left: 5px;
+    padding-right: 5px;
+    line-height: 25px;
+}
+
+.danger {
+	color:$pomogranate-color;
+}
+
+.sign-in {
+	display:inline;
+	position: absolute; 
+	right: 10px;
+}
+
+.user-settings {
+	height: 35px;
+    display: inline-block;
+    float: left;
+}
+
+.header-home {
+	display:inline;
+	float:left
+}
+
+.login-menus {
+	display:inline-block;
+	float:left;
+	margin-left:110px;
+	margin-top:10px;
+	padding-right:10px;
+}
+
+.login-menu-items {
+	float:left;
+	margin-left:20px;
+	cursor:pointer
+}
+
+.align-right {
+	display:inline;
+	position: absolute; 
+	right: 10px;
+}
+
+#usernameLabel, #passwordLabel {
+	padding-left:10px;
+	padding-right:5px
+}
+
+.signupButtons {
+	position:absolute;
+	right:15px;
+	top:8px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---- Mobile related CSS ----- */
+/*------ This is for sm (Tablets) and xs (Mobiles) ------ */
+@media screen 
+  and (max-width: 991px) 
+   {
+   
+   #listenToTopAthletes {
+		height: 1200px;
+	}
+	
+	#becomeCouchCoach {
+		height: 1050px;
+	}
+   
+   #desktopThreads, #mobileThreads {
+		margin:10px;
+	}
+   
+	#desktopThreads {
+		display: none;
+	}
+	
+	#mobileThreads {
+		display: block;
+	}
+	
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+		padding-left:2px;
+		padding-right:2px
+	}
+	
+	.row {
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 8px;
+	}
+	
+	#usernameLabel, #passwordLabel {
+		padding-top:5px;
+	}
+	
+	/* ---- Below 5 are after login header components ---- */
+	
+	.header-navbar {
+		height:85px;
+	}
+	
+	.header-home {
+		display:block;
+		float:none;
+	}
+	
+	label.control-label {
+		padding-right:8px;
+	}
+	
+	.text-right {
+		padding-right:5px;
+	}
+
+	.login-menus {
+		display: -webkit-flex; /* Safari */
+   		-webkit-align-items: center; /* Safari 7.0+ */
+    	display: flex;
+    	align-items: center;
+		margin-left:180px;
+		margin-top:10px;
+		width:500px
+	}
+	
+	.login-menu-items {
+		flex:1;
+		margin-left:0px;
+		cursor:pointer
+	}
+	
+	.align-right { 
+		right: 10px;
+		top:10px;
+	}
+	
+	.footer-texts {
+  		text-align: center;
+ 	}
+ 	
+ 	.footer-inverse {
+ 		padding-bottom:20px;
+ 	}
+}
+
+/*------ This is for xs (Mobiles) ------ */
+@media screen 
+  and (max-width: 767px) {
+	/* ---- Below 3 are after login header components ---- */
+	
+	.login-menus {
+		margin-left:10px;
+		margin-top:10px;
+		width:100%
+	}
+	
+	.header-navbar {
+		height:135px;
+	}
+
+	.align-right {
+		display: block;
+    	margin-left: 10px;
+	}
+	
+	.form-horizontal .form-group {
+		margin-left: 0px;
+		margin-right: 0px
+	}
+	
+	#listenToTopAthletes {
+		height: 1260px;
+	}
+	
+	#becomeCouchCoach {
+		height: 1150px;
+	}
+	
+	label.control-label {
+		padding-right:3px;
+	}
+	
+	.text-right {
+		padding-right:2px;
+	}
+}
+
+/*---- Small width mobiles ---*/
+@media screen 
+  and (max-width: 450px) 
+   {
+	.footer {
+		padding-left:0px;
+		padding-right:0px;
+	}
+	
+	#loginButton {
+		margin-left:-55px;
+	}
+	.modal-body {
+		padding:10px;
+	}
+	
+	.form-container {
+		padding:10px 5px;
+	}
+	
+	.login-menus {
+		padding-right:20px;
+	}
+	
+	.signupButtons {
+		right:5px;
+	}
+	
+}
+
+
+
+/*----Very Small width mobiles ---*/
+@media screen 
+  and (max-width: 330px) 
+   {
+	#listenToTopAthletes {
+		height: 1300px;
+	}
+	
+	.footer {
+		margin-bottom:20px;
+		}
+		
+	.modal-body {
+		padding: 0px;
+    	padding-top: 10px;
+	}
+	
+	#loginButton {
+		margin-left:-110px;
+	}
+	
+	.small-in-mobile {
+		font-size:14px !important;
+	}
+	
+	#usernameLabel, #passwordLabel {
+		padding-left:0px;
+		padding-right:0px
+	}
+	
+	.align-right {
+		position:initial;
+	}
+	
+	#popupMessageBody p {
+		margin-bottom: 0px;
+    	padding-bottom: 10px;
+	}
+	
+	#joinListeningSportsFan, #joinAsBroadcaster {
+		font-size: 0.99em;
+	}
+	
+	.signupButtons {
+		position:initial;
+		padding-bottom:10px;
+		padding-top:5px;
+	}
+	
+	.align-right {
+    	right: 5px;
+	}
+
+	
+	
+}
+
