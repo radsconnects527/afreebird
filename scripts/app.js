@@ -47,6 +47,26 @@ angular
         controller: 'InspirationCtrl',
         controllerAs: 'inspiration'
       })
+    .when('/thankyou', {
+        templateUrl: 'views/thankyou.html',
+        controller: 'ThankyouCtrl',
+        controllerAs: 'thankyou'
+      })
+    .when('/doctorscorner', {
+        templateUrl: 'views/doctorscorner.html',
+        controller: 'DoctorscornerCtrl',
+        controllerAs: 'doctorscorner'
+      })
+    .when('/freepro', {
+        templateUrl: 'views/freepro.html',
+        controller: 'FreeproCtrl',
+        controllerAs: 'freepro'
+      })
+    .when('/volunteer', {
+        templateUrl: 'views/volunteer.html',
+        controller: 'VolunteerCtrl',
+        controllerAs: 'volunteer'
+      })
       .otherwise({
         redirectTo: '/'
       });
