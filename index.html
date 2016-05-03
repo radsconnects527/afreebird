@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
@@ -11,80 +12,219 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    
-      <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-       <link rel="stylesheet"  href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-       <link rel="stylesheet" type="text/css" href="styles/style.css">
-    
+
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+     
+
+
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="dist/css/bootstrap-submenu.min.css">
+
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js" defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" defer></script>
+  <script src="dist/js/bootstrap-submenu.min.js" defer></script>-->
+
+
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700|Titillium:400,600,700' rel='stylesheet' type='text/css'>
- <!--    <link rel="stylesheet" href="styles/ui-grid.css"> -->
+    <!--    <link rel="stylesheet" href="styles/ui-grid.css"> -->
     <!-- endbuild -->
-  </head>
-  <body ng-app="freebirdApp">
+</head>
+
+<body ng-app="freebirdApp">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
 
-	<div ng-controller="MainCtrl">
-        
+
+    <div ng-controller="MainCtrl">
+
         <nav class="navbar navbar-inverse" style="margin-bottom:0; background-color:#2574A9; border-color:#2574A9; min-height:20px ">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-4">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="" style="font-color:#fff" ng-click="navigate('')">HOME</a>
-        </div>
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-4">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="" style="font-color:#fff" ng-click="navigate('')">HOME</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-4">
+                    <ul class="nav navbar-nav">
+                        <li><a href="" ng-click="navigate('about')">ABOUT</a>
+
+                            <!--<li class="dropdown ">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tasks<b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="/tasks">List</a>
+        </li>
+
+        <li>
+          <a href="/tasks/new">New Task</a>
+        </li>-->
+
+                            <!--<ul class="sub-menu">
+                                <li id="menu-item-4840" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4840"><a href="http://www.afreebird.org/about/contact-us/">Contact Us</a></li>
+                                <li id="menu-item-3065" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3065"><a href="http://www.afreebird.org/about/">THE INSPIRATION</a></li>
+                                <li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="http://www.afreebird.org/about/the-inspiration/">The Inspiration</a></li>
+                                <li id="menu-item-3077" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077"><a href="http://www.afreebird.org/our-vision/">Our Mission</a></li>
+                                <li id="menu-item-3067" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3067"><a href="http://www.afreebird.org/about/people-of-afb/">People of AFB</a></li>
+                            </ul>-->
+
+
+
+
+
+
+
+                        </li>
+                        <li><a href="" ng-click="navigate('inspiration')">INSPIRATION</a></li>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">AFB IN THE NEWS<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                        <li><a href="" ng-click="navigate('afbmagazine')">AFB Magazine</a></li>
+                        
+                        
+                    </ul>
+                        </li>
+                    
+                        <li><a href="" ng-click="navigate('thankyou')">THANK YOU </a></li>
+                        <li><a href="http://online.fliphtml5.com/ynvi/mzfr/" target="_blank"> MAGAZINE</a></li>
+                        <li><a href="" ng-click="navigate('doctorscorner')"> DOCTOR'S CORNER </a></li>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown"> PROGRMAS<span class="caret"></span> </a>
+                            <ul class="dropdown-menu" role="menu">
+                        <li><a href="" ng-click="navigate('fightfree')">Fight Free</a></li>
+                        <li><a href="" ng-click="navigate('freepro')">Free and Pro</a></li>
+                        <li><a href="" ng-click="navigate('dream')">Dream</a></li>
+                        
+                    </ul>
+                        </li>
+                        <!--<li><a href=""> GET INVOLVED </a></li>-->
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">GET INVOLVED<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="" ng-click="navigate('volunteer')">Become a Volunteer</a></li>
+                                <li><a href="" ng-click="navigate('tutor')">Become a Tutor</a></li>
+                                <li><a href="" ng-click="navigate('intern')">Become a Intern</a></li>
+                            </ul>
+                        </li>
+                        <li><a href=""> DONATE </a></li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" > SPONSORS<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        <li><a href="" ng-click="navigate('sponsor')">Sponsor a child</a></li>
+                        <li><a href="" ng-click="navigate('oursponsors')">Our Sponsor</a></li>
+                        
+                    </ul>
+                        </li>
+                    
+
+
+                   
+
+
+
+
+                    <ul class="collapse nav navbar-nav nav-collapse slide-down" role="search" id="nav-collapse4">
+                        <li><a href="#">Support</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="https://pbs.twimg.com/profile_images/588909533428322304/Gxuyp46N.jpg" alt="maridlcrmn" width="20" /> Maridlcrmn <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">My profile</a></li>
+                                <li><a href="#">Favorited</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- /.navbar -->
+
+        <!--<div id="small-links">
+  <a href="/"><div id="logo">
     
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-collapse-4">
-          <ul class="nav navbar-nav">
-            <li><a href="" ng-click="navigate('about')">ABOUT</a></li>
-            <li><a href="" ng-click="navigate('inspiration')">INSPIRATION</a></li>
-            <li><a href="">AFB IN THE NEWS</a></li>
-            <li><a href="">THANK YOU PAGE</a></li>
-            <li><a href="http://online.fliphtml5.com/ynvi/mzfr/" target="_blank">ANNUAL MAGAZINE</a></li>
-            <li><a href="" ng-click="navigate('doctorscorner')"> DOCTOR'S CORNER </a></li>
-            <li><a href=""> PROGRMAS </a></li>
-            <li><a href=""> GET INVOLVED </a></li>
-            <li><a href=""> DONATE </a></li>
-            <li><a href=""> SPONSORS </a></li>
-            
-          </ul>
-          <ul class="collapse nav navbar-nav nav-collapse slide-down" role="search" id="nav-collapse4">
-            <li><a href="#">Support</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="https://pbs.twimg.com/profile_images/588909533428322304/Gxuyp46N.jpg" alt="maridlcrmn" width="20" /> Maridlcrmn <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">My profile</a></li>
-                <li><a href="#">Favorited</a></li>
-                <li><a href="#">Settings</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Logout</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container -->
-    </nav><!-- /.navbar -->
-        
-	    <div ng-view=""></div>
-	</div>
+   <img src="http://www.afreebird.org/wp-content/themes/afree/images/logo_tm.png" width="379" height="56" alt="A Free Bird"></div>
+    
+  </a>
+  <!--logo-->
+        <!--<div id="side-links">
+      </div>
+  <!--sidelinks-->
+        <!--<div id="social-buttons">  
+  	 <!--<a href="http://www.afreebird.org/afbtest/newsletter/"><p style="width: 190px; height: 23px; color: white; background: #667733; float: left; margin-right: 20px; margin-top: 7px; text-align: center; padding-top: 3px; border-style: outset; border-width: 2px; border-radius: 3px; border-color: #668822;">Subscribe to Our Newsletter</p></a>-->
+        <!--<a href="http://www.afreebird.org/signup-to-our-newsletter/" title="Subscribe to newsletter" id="signup-link">
+    <div id="newsletter"><p id="subscribe">Subscribe</p></div></a>
+
+    			<div class="textwidget"><a href="http://twitter.com/AFreeBirdOrg"><img src="http://www.afreebird.org/wp-content/uploads/2014/02/ico-twit.png" alt="Twitter"></a> <a href="http://www.facebook.com/afreebirdorg"><img src="http://www.afreebird.org/wp-content/uploads/2014/02/ico-face.png" alt="Facebook"></a><a href="http://www.instagram.com/afreebirdorg"><img src="http://www.afreebird.org/wp-content/uploads/2014/02/insta_icon.png" alt="Instagram"></a><a href="http://www.youtube.com/user/AFreeBirdOrg"><img src="http://www.afreebird.org/wp-content/uploads/2014/02/you40.png" alt="Youtube"></a></div>
+		  </div>
+  
+  <!--socialbuttons
+</div>-->
+
+        <!--<img class="logooo" src="styles/img/logo1.jpg">-->
+        <!-- <img class="suscribe" src="styles/img/suscribenest.jpg">  
+        <img class="twitter" src="styles/img/twittericon.jpg">  
+        <img class="facebook" src="styles/img/facebookicon.jpg">  
+        <img class="instagram" src="styles/img/instragramicon.jpg">  
+        <img class="youtube" src="styles/img/utubeicon.jpg">-->
+
+        <img class="logooo" src="styles/img/logo1.jpg" ng-click="navigate('home')">
+
+        <a href="http://www.afreebird.org/signup-to-our-newsletter/" target="_blank">
+            <img class="suscribe" src="styles/img/suscribenest.jpg">
+
+        </a>
+
+        <a href="http://twitter.com/AFreeBirdOrg" target="_blank">
+            <img class="twitter" src="styles/img/twittericon.jpg" ng-click="navigate('http://twitter.com/AFreeBirdOrg')">
+        </a>
+
+        <a href="http://www.facebook.com/afreebirdorg" target="_blank">
+            <img class="facebook" src="styles/img/facebookicon.jpg">
+        </a>
+
+        <a href="http://www.instagram.com/afreebirdorg" target="_blank">
+            <img class="instagram" src="styles/img/instagramicon.jpg">
+        </a>
+
+        <a href="http://www.youtube.com/user/AFreeBirdOrg" target="_blank">
+            <img class="youtube" src="styles/img/utubeicon.jpg">
+        </a>
+
+
+
+
+
+
+
+        <div ng-view=""></div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <script>
+        ! function (A, n, g, u, l, a, r) {
+            A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {
+                    (A[l].q = A[l].q || []).push(arguments)
+                }, A[l].l = +new Date, a = n.createElement(g),
+                r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+        }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
     </script>
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -101,21 +241,28 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    
-	<!-- <script src="scripts/app.min.js"></script> -->
-     <script src="scripts/app.js"></script>
-     <script src="scripts/controllers/mainController.js"></script>
-      <script src="scripts/controllers/home.js"></script>
-      <script src="scripts/controllers/about.js"></script>
-      <script src="scripts/controllers/ksk.js"></script>
-      <script src="scripts/controllers/dream.js"></script>
-      <script src="scripts/controllers/fightfree.js"></script>
-      <script src="scripts/controllers/inspiration.js"></script>
-      <script src="scripts/controllers/thankyou.js"></script>
-      <script src="scripts/controllers/doctorscorner.js"></script>
-      <script src="scripts/controllers/freepro.js"></script>
-      <script src="scripts/controllers/volunteer.js"></script>
 
-     <!-- endbuild -->
+    <!-- <script src="scripts/app.min.js"></script> -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/mainController.js"></script>
+    <script src="scripts/controllers/home.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/ksk.js"></script>
+    <script src="scripts/controllers/dream.js"></script>
+    <script src="scripts/controllers/fightfree.js"></script>
+    <script src="scripts/controllers/inspiration.js"></script>
+    <script src="scripts/controllers/afbmagazine.js"></script>
+    <script src="scripts/controllers/doctorscorner.js"></script>
+    <script src="scripts/controllers/freepro.js"></script>
+    <script src="scripts/controllers/volunteer.js"></script>
+    <script src="scripts/controllers/thankyou.js"></script>
+    <script src="scripts/controllers/tutor.js"></script>
+    <script src="scripts/controllers/intern.js"></script>
+    <script src="scripts/controllers/sponsor.js"></script>
+    <script src="scripts/controllers/newsletter.js"></script>
+    <script src="scripts/controllers/oursponsors.js"></script>
+
+    <!-- endbuild -->
 </body>
+
 </html>

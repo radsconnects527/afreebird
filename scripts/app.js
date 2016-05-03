@@ -47,10 +47,10 @@ angular
         controller: 'InspirationCtrl',
         controllerAs: 'inspiration'
       })
-    .when('/thankyou', {
-        templateUrl: 'views/thankyou.html',
-        controller: 'ThankyouCtrl',
-        controllerAs: 'thankyou'
+    .when('/afbmagazine', {
+        templateUrl: 'views/afbmagazine.html',
+        controller: 'AfbmagazineCtrl',
+        controllerAs: 'afbmagazine'
       })
     .when('/doctorscorner', {
         templateUrl: 'views/doctorscorner.html',
@@ -66,6 +66,36 @@ angular
         templateUrl: 'views/volunteer.html',
         controller: 'VolunteerCtrl',
         controllerAs: 'volunteer'
+      })
+    .when('/thankyou', {
+        templateUrl: 'views/thankyou.html',
+        controller: 'ThankyouCtrl',
+        controllerAs: 'thankyou'
+      })
+    .when('/tutor', {
+        templateUrl: 'views/tutor.html',
+        controller: 'TutorCtrl',
+        controllerAs: 'tutor'
+      })
+    .when('/intern', {
+        templateUrl: 'views/intern.html',
+        controller: 'InternCtrl',
+        controllerAs: 'intern'
+      })
+    .when('/sponsor', {
+        templateUrl: 'views/sponsor.html',
+        controller: 'SponsorCtrl',
+        controllerAs: 'sponsor'
+      })
+    .when('/newsletter', {
+        templateUrl: 'views/newsletter.html',
+        controller: 'NewsletterCtrl',
+        controllerAs: 'newsletter'
+      })
+    .when('/oursponsors', {
+        templateUrl: 'views/oursponsors.html',
+        controller: 'OursponsorsCtrl',
+        controllerAs: 'oursponsors'
       })
       .otherwise({
         redirectTo: '/'
