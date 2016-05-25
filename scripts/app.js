@@ -97,6 +97,16 @@ angular
         controller: 'OursponsorsCtrl',
         controllerAs: 'oursponsors'
       })
+    .when('/userRegistration', {
+        templateUrl: 'views/userRegistration.html',
+        controller: 'UserRegistrationCtrl',
+        controllerAs: 'userRegistration'
+      })
+    .when('/eventsCarousel', {
+        templateUrl: 'views/eventsCarousel.html',
+        controller: 'EventsCarouselCtrl',
+        controllerAs: 'eventsCarousel'
+      })
       .otherwise({
         redirectTo: '/'
       });
