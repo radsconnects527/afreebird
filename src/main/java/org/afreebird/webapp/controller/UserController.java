@@ -37,6 +37,7 @@ public class UserController {
 	@RequestMapping(value = "/getUser", method=RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE})
 	@ResponseBody
 	public List<User> getUser() {
+		System.out.println("test event");
 		return service.getUser(1L);
 	}
 	
