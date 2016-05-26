@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+<entry key="getAllUsers">
+    <![CDATA[
+        select * from app_user
+    ]]>
+
+</entry>    
+<entry key="createUser">
+    <![CDATA[
+		insert into app_user(first_name, last_name, email_id, user_password) values (?,?,?,?)
+    ]]>
+</entry>
+</properties>
