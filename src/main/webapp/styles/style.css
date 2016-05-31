@@ -66,6 +66,8 @@ header
     left: 0;
     overflow: hidden;
     z-index: -100;
+    background-size: cover;
+    
 }
 
 .fullscreen-bg__video {
@@ -541,7 +543,7 @@ border-radius: 10%;
     height: 800px;
     width: 100%;
     background-size: cover;
-    background-position: center;
+    background-position:center;
     margin: 0;
 }
 
@@ -615,7 +617,7 @@ p
     display:block;
     font-size: 17px;
     line-height: 24px;
-    margin-top: 15px;
+    /*margin-top: 15px;*/
     text-align: justify;
 }
 
