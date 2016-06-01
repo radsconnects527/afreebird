@@ -56,6 +56,18 @@ header
     margin: 0;
 }
 
+.left-tree-items {
+    margin-top: 32%;
+}
+
+.tree-icon
+{
+width: 132px;
+height: auto;
+border-radius: 10%;
+transform: translate(-50%, -50%);
+}
+
 /* VIDEO BACKGROUND */
 
 .fullscreen-bg {
@@ -288,82 +300,9 @@ header
 
 /* WHITE LINE */
 
-.img5
+.tree-line
 {
-   
-    /*border-radius: 10%;*/
-    position: absolute;
-    top: 39%;
-    left: 19.8%;
-    width: 4px;
-    height: 50px ;
-    /*transform: translate(-50%, -50%);*/
-    
-}
-
-.img6
-{
-   
-    /*border-radius: 10%;*/
-    position: absolute;
-    top: 37%;
-    left: 10%;
-    width: 4px;
-    height: 160px;
-    /*transform: translate(-50%, -50%);*/
-    
-}
-
-.img7
-{
-   
-   
-    position: absolute;
-    top: 29.5%;
-    left: 30%;
-    width: 4px;
-    height: 214px;
- 
-    
-}
-
-.img8
-{
-   
- 
-    position: absolute;
-    top: 35%;
-    right: 33%;
-    width: 4px;
-    height: 173px;
-  
-    
-}
-
-.img9
-{
-   
- 
-    position: absolute;
-    top: 43%;
-    right: 13%;
-    width: 4px;
-    height: 130px;
-
-    
-}
-
-.img10
-{
-   
-  
-    position: absolute;
-    top: 33%;
-    right: 23%;
-    width: 4px;
-    height: 80px;
-   
-    
+    width:4px;
 }
 
 /* A FREE BIRD YOUTUBE VIDEO */
@@ -538,6 +477,14 @@ border-radius: 10%;
 
 /* VIEW 'about.html' */
 
+.center
+{
+    text-align: center;
+    
+}
+
+
+
 .fullscreen-bluebg {
     background-image: url(img/brightsky.jpg);
     height: 800px;
@@ -618,8 +565,11 @@ p
     font-size: 17px;
     line-height: 24px;
     /*margin-top: 15px;*/
-    text-align: justify;
+    /*text-align: justify;*/
 }
+
+/*h1 {text-align:center;}*/
+p {text-align:center;}
 
 /* BOOTSTRAP MENU */
 
@@ -1338,5 +1288,4 @@ table {
       margin: auto;
   }
   
-
 
