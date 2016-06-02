@@ -26,7 +26,15 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-4">
                     <ul class="nav navbar-nav">
-                        <li><a href="" ng-click="navigate('about')">ABOUT</a>
+                        <li class="dropdown">
+                            <a href=""  ng-click="navigate('about')" class="dropdown-toggle" data-toggle="dropdown">ABOUT<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                        <li><a href="" ng-click="navigate('thankyou')">Inspiration </a></li>
+                        <li><a href="" ng-click="navigate('afbmagazine')">Mission</a></li>
+                        
+                        
+                    </ul>
+                        </li>
 
                             <!--<li class="dropdown ">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tasks<b class="caret"></b></a>
@@ -56,15 +64,16 @@
                         </li>
                         <!--<li><a href="" ng-click="navigate('inspiration')">INSPIRATION</a></li>-->
                         <li class="dropdown">
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown">AFB IN THE NEWS<span class="caret"></span></a>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">AFB NEWS<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
+                        <li><a href="" ng-click="navigate('thankyou')">THANK YOU </a></li>
                         <li><a href="" ng-click="navigate('afbmagazine')">AFB Magazine</a></li>
                         
                         
                     </ul>
                         </li>
                     
-                        <li><a href="" ng-click="navigate('thankyou')">THANK YOU </a></li>
+                        
                         <li><a href="http://online.fliphtml5.com/ynvi/mzfr/" target="_blank"> MAGAZINE</a></li>
                         <li><a href="" ng-click="navigate('doctorscorner')"> DOCTOR'S CORNER </a></li>
                         <li class="dropdown">
@@ -73,6 +82,7 @@
                         <li><a href="" ng-click="navigate('fightfree')">Fight Free</a></li>
                         <li><a href="" ng-click="navigate('freepro')">Free and Pro</a></li>
                         <li><a href="" ng-click="navigate('dream')">Dream</a></li>
+                        <li><a href="" ng-click="navigate('dream')">KSK</a></li>
                         
                     </ul>
                         </li>
@@ -85,22 +95,29 @@
                                 <li><a href="" ng-click="navigate('intern')">Become a Intern</a></li>
                             </ul>
                         </li>
-                        <li><a href=""> DONATE </a></li>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">DONATE<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="" ng-click="navigate('volunteer')">Go Fund Me</a></li>
+                                <li><a href="" ng-click="navigate('tutor')">Amazon Smile</a></li>
+                                <li><a href="" ng-click="navigate('intern')">ebay</a></li>
+                            </ul>
+                        </li>
                     <li class="dropdown">
                         <a href="" class="dropdown-toggle" data-toggle="dropdown" > SPONSORS<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                         <li><a href="" ng-click="navigate('sponsor')">Sponsor a child</a></li>
+                        <li><a href="" ng-click="navigate('sponsor')">Get Excited</a></li>
                         <li><a href="" ng-click="navigate('oursponsors')">Our Sponsor</a></li>
                         
                     </ul>
                         </li>
-                        <li><a href="">SOCIAL MEDIA </a></li>
+                        <li><a href="">AFB STORE </a></li>
                         <!--<li><a href="" ng-click="navigate('inspiration')">CONTACT US</a></li>-->
                        <!--<li><a href="http://online.fliphtml5.com/ynvi/mzfr/" target="_blank"> EVENTS</a></li>
                         <li><a href="" ng-click="navigate('doctorscorner')"> BLOG </a></li>
                         <li><a href="http://online.fliphtml5.com/ynvi/mzfr/" target="_blank"> AFB STORE</a></li>-->
                         
-                    
 
 
                    
@@ -148,15 +165,15 @@
                     <div class="col-md-2"></div>
                     <div class="col-md-2">
                          <!--<img class="tree-line" src="styles/img/whiteline.jpg" >-->
-                        <img class= "handcursor tree-icon"  src="styles/img/fightfreenew.png" ng-click="navigate('fightfree')" style="margin-top:120px; margin-left:50px">
+                        <img class= "handcursor tree-icon"  src="styles/img/fightfreenew.png" ng-click="navigate('fightfree')" style="margin-top: 100px; width: 150px; margin-left:80px">
                     </div>
                      <div class="col-md-1">
                           <!--<img class="tree-line" src="styles/img/whiteline.jpg">-->
-                        <img class="tree-icon handcursor" src="styles/img/newdream.jpg" ng-click="navigate('dream')">
+                        <img class="tree-icon handcursor" src="styles/img/newdream.jpg" ng-click="navigate('dream')" style="margin-top: -90px; margin-left: -20px">
                     </div>
                      <div class="col-md-1">
                           <!--<img class="tree-line" src="styles/img/whiteline.jpg">-->
-                       <img class="tree-icon handcursor" src="styles/img/newfreepro.jpg" ng-click="navigate('freepro')" style="margin-top: 140px; margin-left: 30px;">
+                       <img class="tree-icon handcursor" src="styles/img/newfreepro.jpg" ng-click="navigate('freepro')" style="margin-top: 140px; width:150px; margin-left: 30px;">
                     </div>
                 </div>
                 
