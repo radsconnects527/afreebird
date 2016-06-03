@@ -7,7 +7,7 @@
         
         <div class="container">
             
-            <nav class="navbar navbar-inverse">
+            <nav class="navbar navbar-inverse" style="mrhgin-left:100px" >
            <!-- style="margin-bottom:0; background-color:#2574A9; border-color:#2574A9; min-height:20px "-->
            
             <div class="container">
@@ -27,10 +27,10 @@
                 <div class="collapse navbar-collapse" id="navbar-collapse-4">
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
-                            <a href=""  ng-click="navigate('about')" class="dropdown-toggle" data-toggle="dropdown">ABOUT<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                        <li><a href="" ng-click="navigate('thankyou')">Inspiration </a></li>
-                        <li><a href="" ng-click="navigate('afbmagazine')">Mission</a></li>
+                            <a href="" ng-click="navigate('about')" class="dropdown-toggle" data-toggle="dropdown">ABOUT<span class="caret"></span></a>
+                            <ul class="dropdown-menu" ng-click="navigate('about')" role="menu">
+                        <li><a href="" ng-click="navigate('inspiration')">Inspiration </a></li>
+                        <li><a href="" ng-click="navigate('mission')">Mission</a></li>
                         
                         
                     </ul>
@@ -75,14 +75,15 @@
                     
                         
                         <li><a href="http://online.fliphtml5.com/ynvi/mzfr/" target="_blank"> MAGAZINE</a></li>
-                        <li><a href="" ng-click="navigate('doctorscorner')"> DOCTOR'S CORNER </a></li>
+                       <!-- <li><a href="" ng-click="navigate('doctorscorner')"> DOCTOR'S CORNER </a></li>-->
                         <li class="dropdown">
                             <a href="" class="dropdown-toggle" data-toggle="dropdown"> PROGRMAS<span class="caret"></span> </a>
                             <ul class="dropdown-menu" role="menu">
                         <li><a href="" ng-click="navigate('fightfree')">Fight Free</a></li>
                         <li><a href="" ng-click="navigate('freepro')">Free and Pro</a></li>
                         <li><a href="" ng-click="navigate('dream')">Dream</a></li>
-                        <li><a href="" ng-click="navigate('dream')">KSK</a></li>
+                        <li><a href="" ng-click="navigate('ksk')">KSK</a></li>
+                         <li><a href="" ng-click="navigate('asa')">ASA</a></li>
                         
                     </ul>
                         </li>
@@ -112,7 +113,7 @@
                         
                     </ul>
                         </li>
-                        <li><a href="">AFB STORE </a></li>
+                        <li><a href="" ng-click="navigate('afbperfume')">AFB STORE </a></li>
                         <!--<li><a href="" ng-click="navigate('inspiration')">CONTACT US</a></li>-->
                        <!--<li><a href="http://online.fliphtml5.com/ynvi/mzfr/" target="_blank"> EVENTS</a></li>
                         <li><a href="" ng-click="navigate('doctorscorner')"> BLOG </a></li>
@@ -151,29 +152,29 @@
                 
                 <div class="row">
                     <div class="col-md-2">
-                        <img class="tree-line" src="styles/img/whiteline.jpg" style="height: 200px; margin-top: -250px">
-                        <img class="handcursor tree-icon" src="styles/img/newkidssupporting.jpg" ng-click="navigate('ksk')" style="margin-top:150px">
+                        <!--<img class="tree-line" src="styles/img/whiteline.jpg" style="height: 200px; margin-top: -250px">-->
+                        <img class="handcursor tree-icon" src="styles/img/newkidssupporting.jpg" ng-click="navigate('ksk')" style="margin-top: 25px; width: 170px">
                     </div>
                      <div class="col-md-2">
-                          <img class="tree-line" src="styles/img/whiteline.jpg" style="margin-top: -380px; height: 150px">
+                          <!--<img class="tree-line" src="styles/img/whiteline.jpg" style="margin-top: -380px; height: 150px">-->
                         <img class="handcursor tree-icon" src="styles/img/newsocialmedia.jpg">
                     </div>
                      <div class="col-md-2" style="margin-left:-20px">
-                         <img class="tree-line" src="styles/img/whiteline.jpg" style="height: 230px; margin-top: -320px">
-                        <img class="handcursor tree-icon" src="styles/img/newartistsupporting.jpg" style="margin-top:150px">
+                         <!--<img class="tree-line" src="styles/img/whiteline.jpg" style="height: 230px; margin-top: -320px">-->
+                        <img class="handcursor tree-icon" src="styles/img/newartistsupporting.jpg" style="margin-top: 75px; margin-right: 50;width: 140px">
                     </div>
                     <div class="col-md-2"></div>
                     <div class="col-md-2">
                          <!--<img class="tree-line" src="styles/img/whiteline.jpg" >-->
-                        <img class= "handcursor tree-icon"  src="styles/img/fightfreenew.png" ng-click="navigate('fightfree')" style="margin-top: 100px; width: 150px; margin-left:80px">
+                        <img class= "handcursor tree-icon"  src="styles/img/fightfreenew.png" ng-click="navigate('fightfree')" style="margin-top: 100px; width: 152px; margin-left:80px">
                     </div>
                      <div class="col-md-1">
                           <!--<img class="tree-line" src="styles/img/whiteline.jpg">-->
-                        <img class="tree-icon handcursor" src="styles/img/newdream.jpg" ng-click="navigate('dream')" style="margin-top: -90px; margin-left: -20px">
+                        <img class="tree-icon handcursor" src="styles/img/newdream.jpg" ng-click="navigate('dream')" style="margin-top:-90px; width: 130px; margin-left: -20px">
                     </div>
                      <div class="col-md-1">
                           <!--<img class="tree-line" src="styles/img/whiteline.jpg">-->
-                       <img class="tree-icon handcursor" src="styles/img/newfreepro.jpg" ng-click="navigate('freepro')" style="margin-top: 140px; width:150px; margin-left: 30px;">
+                       <img class="tree-icon handcursor" src="styles/img/newfreepro.jpg" ng-click="navigate('freepro')" style="margin-top: 140px; width:160px; margin-left: 30px;">
                     </div>
                 </div>
                 
@@ -209,7 +210,7 @@
                
                
                <img class="img1 handcursor" src="styles/img/joinusgroup.jpg">
-               <img class="img2 handcursor" src="styles/img/boygroup.jpg">
+               <img class="img2 handcursor" src="styles/img/boygroup.jpg" ng-click="navigate('afbmagazine')">
                <img class="img3 handcursor" src="styles/img/newslettersignup.jpg" ng-click="navigate('newsletter')">
                <img class="img4 handcursor" src="styles/img/A%20freebird%20Logo.jpg">
 

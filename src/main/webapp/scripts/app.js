@@ -107,6 +107,11 @@ angular
         controller: 'EventsCarouselCtrl',
         controllerAs: 'eventsCarousel'
       })
+    .when('/afbperfume', {
+        templateUrl: 'views/afbperfume.html',
+        controller: 'AfbperfumeCtrl',
+        controllerAs: 'afbperfume'
+      })
       .otherwise({
         redirectTo: '/'
       });
