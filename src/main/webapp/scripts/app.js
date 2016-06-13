@@ -112,6 +112,16 @@ angular
         controller: 'AfbperfumeCtrl',
         controllerAs: 'afbperfume'
       })
+    .when('/asa', {
+        templateUrl: 'views/asa.html',
+        controller: 'AsaCtrl',
+        controllerAs: 'asa'
+      })
+    .when('/mission', {
+        templateUrl: 'views/mission.html',
+        controller: 'MissionCtrl',
+        controllerAs: 'mission'
+      })
       .otherwise({
         redirectTo: '/'
       });
@@ -121,4 +131,18 @@ angular
     
     		$location.path(loc);
     }
+})
+
+.directive('menuDirective', function () {
+    return {
+        restrict: 'E', //E = element, A = attribute, C = class, M = comment         
+        //scope: {
+            //@ reads the attribute value, = provides two-way binding, & works with functions
+            //title: '@'         },
+        //template: '<div>{{ myVal }}</div>',
+        templateUrl: 'directive/menu.html',
+        //controller: controllerFunction, //Embed a custom controller in the directive
+        //link: function ($scope, element, attrs) { } //DOM manipulation
+    }
 });
+
