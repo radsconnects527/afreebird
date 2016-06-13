@@ -385,6 +385,11 @@ iframe
 
     }
 
+.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+    margin-right: 0;
+    margin-left: 50px;
+}
+
 /* MENU LISTS */
 
 .main-nav li
@@ -415,7 +420,12 @@ iframe
 
 header .ksk
 {
-    background-image: url(img/uploadvideo.jpg);
+    background-image:
+         linear-gradient(
+      rgba(30, 0, 0, 0.45), 
+      rgba(30, 0, 0, 0.45)
+    ),
+        url(img/uploadvideo.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -437,7 +447,12 @@ header .ksk
 
 .dream
 {
-    background-image: url(img/dreamwithppl.jpg);
+    background-image: 
+         linear-gradient(
+      rgba(30, 0, 0, 0.45), 
+      rgba(30, 0, 0, 0.45)
+    ),
+        url(img/dreamwithppl.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -496,11 +511,18 @@ border-radius: 10%;
 
 .fightfree
 {
-    background-image: url(img/Fightfreesection.jpg);
+    background-image: 
+        linear-gradient(
+      rgba(30, 0, 0, 0.45), 
+      rgba(30, 0, 0, 0.45)
+    ),
+        url(img/Fightfreesection.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
     margin: 0;
+    
+
 }
 
 .handcursor
@@ -512,9 +534,9 @@ border-radius: 10%;
   margin: 30px;
   background-color: #ffffff;
   border: 1px solid black;
-  opacity: 0.6;
+  opacity: 0.3;
   filter: alpha(opacity=60); /* For IE8 and earlier */
-  border-radius: 10%;
+  border-radius: 0%;
   position: absolute;
   top: 30%;
   left: 85%;
@@ -528,8 +550,9 @@ border-radius: 10%;
 
 .transbox p {
   margin: 5%;
-  font-weight: thin;
-  color: #000000;
+  font-weight: 800;
+  color: #FFFF33;
+ 
 }
 
 /* VIEW 'about.html' */
@@ -546,7 +569,7 @@ border-radius: 10%;
     right: 0;
     bottom: 0;
     left: 0;
-    overflow: hidden;
+    overflow: scroll;
     z-index: -100;
     background-size: cover;
     
@@ -755,10 +778,13 @@ p {text-align:center;}
     white-space: nowrap;
 }
 
-.dropdown-toggle>a
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a
 {
-    background-color: transparent;
+    background-image: none;
+   
 }
+    
 
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
     color: #fff;
@@ -795,7 +821,13 @@ td, th {
 
 .freepro
 {
-    background-image: url(img/boyfreefreeproextra.jpg);
+    background-image: 
+        
+         linear-gradient(
+      rgba(30, 0, 0, 0.45), 
+      rgba(30, 0, 0, 0.45)
+    ),
+        url(img/boyfreefreeproextra.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -1291,6 +1323,16 @@ div
     box-sizing: initial;
     clear: none;
 }
+
+/* SCROLL BAR */
+
+div.scroll {
+   
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+}
+
 
 
 
